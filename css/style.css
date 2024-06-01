@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+  border: none;
+}
+
+.editor {
+  display: flex;
+}
+
+#js {
+  min-width: 33%;
+}
+
+#messages .error {
+  color: #ea868f;
+}
+
+#messages .warning {
+  color: #ffda6a;
+}
+
+#messages .info {
+  color: #6edff6;
+}
+
+#messages .success {
+  color: #75b798;
+}
+
+.editor pre,
+.validate {
+  background: #1e1f20;
+  border: 1px solid rgb(211, 211, 211);
+  color: rgb(211, 211, 211);
+  flex: 1;
+  font-size: 16px;
+  height: 50vh;
+  padding: 30px 10px;
+  margin: 0;
+  position: relative;
+}
+
+.editor pre:before,
+.validate:before {
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#validate {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 1px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#html:before {
+  content: "HTML";
+}
+
+#css:before {
+  content: "CSS";
+}
+
+#js:before {
+  content: "VERIFICAÇÃO DE CÓDIGO";
+}
