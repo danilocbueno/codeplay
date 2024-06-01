@@ -57,6 +57,10 @@ iframe {
   position: relative;
 }
 
+.editor pre {
+  white-space: pre-wrap;
+}
+
 .editor pre:before,
 .validate:before {
   display: block;
@@ -111,4 +115,30 @@ iframe {
 
 #js:before {
   content: "INSTRUÇÕES";
+}
+
+body {
+  --sb-track-color: #1e1e1e;
+  --sb-thumb-color: #4f4f4f;
+  --sb-size: 8px;
+}
+
+pre::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+pre::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  pre {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }
