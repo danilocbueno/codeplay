@@ -40,6 +40,10 @@ iframe {
   color: #75b798;
 }
 
+#messages ol {
+  margin-left: 40px;
+}
+
 .editor pre,
 .validate {
   background: #1e1f20;
@@ -106,5 +110,5 @@ iframe {
 }
 
 #js:before {
-  content: "VERIFICAÇÃO DE CÓDIGO";
+  content: "INSTRUÇÕES";
 }
